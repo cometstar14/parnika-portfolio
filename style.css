@@ -1,0 +1,92 @@
+/* === GLOBAL STYLES === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #d9a9a9; /* dusty pink */
+  color: #5e1a35; /* maroon text */
+  line-height: 1.6;
+}
+
+/* === NAVBAR === */
+header {
+  background-color: #5e1a35;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #fbe3e3;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fbe3e3;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #5e1a35;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60px;
+}
+
+/* === BUTTON STYLES (can be reused anywhere) === */
+button,
+.resume-btn,
+.contact-button {
+  padding: 10px 20px;
+  background-color: #a11850;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover,
+.resume-btn:hover,
+.contact-button:hover {
+  background-color: #5e1a35;
+}
+
+/* === UTILITY CLASSES === */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #5e1a35;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}

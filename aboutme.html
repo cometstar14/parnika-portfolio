@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Parnika Mardane</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Global & Page-specific styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aboutme.css" />
+</head>
+
+<body>
+
+  <!-- === NAVIGATION BAR === -->
+  <header>
+    <div class="logo">Parnika Mardane</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="awards.html">Awards & Achievements</a>
+      <a href="projects.html">Projects</a>
+      <a href="Resume.pdf" class="resume-btn" target="_blank">Resume</a>
+
+    </nav>
+  </header>
+
+  <!-- === ABOUT SECTION === -->
+  <section class="about-section">
+    <!-- LEFT COLUMN: TEXT -->
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Parnika! I’m a Year 2 Information Technology student at Nanyang Polytechnic with a passion for building
+        <span class="highlight">interactive digital experiences</span>. I enjoy solving problems through
+        technology and bringing ideas to life through code.
+      </p>
+      <p>
+        When I’m not coding, you’ll find me <span class="highlight">cooking</span>, solving
+        <span class="highlight">jigsaw puzzles</span>, or building <span class="highlight">LEGO creations</span>
+        — hobbies that fuel my creativity and attention to detail.
+      </p>
+      <p>
+        I'm actively involved in <span class="highlight">dragon boating</span>, where I’ve developed grit and
+        teamwork, and I had the honour of serving as
+        <span class="highlight">Vice-President of the Student Council</span>, leading peers and organizing
+        impactful school events.
+      </p>
+      <p>
+        I'm currently exploring <span class="highlight">full-stack development</span> with tools like React,
+        Node.js, and MySQL, and have participated in hackathons and collaborative tech projects.
+      </p>
+      <p>
+        I’m always eager to learn, grow, and collaborate on exciting tech initiatives.
+      </p>
+    </div>
+
+    <!-- RIGHT COLUMN: IMAGE CAROUSEL -->
+    <div class="about-right">
+      <div class="carousel-wrapper">
+        <!-- Previous button -->
+        <button class="carousel-btn prev" onclick="prevSlide()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <!-- Carousel images -->
+        <img src="Images/cooking.png" class="carousel-img active" alt="Photo 1" />
+        <img src="Images/puzzle01.png" class="carousel-img" alt="Photo 2" />
+        <img src="Images/dragonboat.png" class="carousel-img" alt="Photo 3" />
+        <img src="Images/studentcouncil.png" class="carousel-img" alt="Photo 4" />
+        <img src="Images/lego.png" class="carousel-img" alt="Photo 5" />
+
+        <!-- Next button -->
+        <button class="carousel-btn next" onclick="nextSlide()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer>
+    <p>© 2025 Parnika Mardane</p>
+  </footer>
+
+  <!-- === SCRIPT === -->
+  <script src="aboutme.js"></script>
+
+</body>
+
+</html>
